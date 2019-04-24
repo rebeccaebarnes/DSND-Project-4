@@ -20,10 +20,18 @@ OR
 
 _You are scrolling through the airbnb site looking at different sites without having selected a date. Is there information that you use from this front page that may indicate that it is more likely that the host has listed the site as available for the dates you have in mind?_
 
+To walk-thru the full project, check out the [notebook](https://github.com/rebeccaebarnes/DSND-Project-4/blob/master/seattle_airbnb_exploration.ipynb).
+
+To read the blog post associated with the article, you can go [here](https://medium.com/@rebeccaebarnes/this-will-make-you-think-like-a-supercomputer-39898ab9eaf8).
+
 ## Technologies Used
 - Python
-- Libraries: sklearn, pandas, numpy, matplotlib, seaborn, zipfile
+- Libraries: sklearn, pandas, numpy, matplotlib, seaborn, nltk
 - Jupyter Notebook
 
 ## Key Findings
-Key findings will be available upon completion of the project.
+Using a Random Forest Classifier, it was possible to predict whether a host made a listing available with approximately 90% accuracy using only information that is available when browsing the listings and the day of the week for which to predict.
+
+!['Enter Message'](airbnb_listing.PNG)
+
+The most important features in the classifier were price, number of reviews, the day of the week, number of bedrooms and whether the host is a superhost. Whether the listing name contained the words _heart_ and _bright_ were the next two most important features.
