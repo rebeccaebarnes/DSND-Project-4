@@ -24,6 +24,22 @@ To walk-thru the full project, check out the [notebook](https://github.com/rebec
 
 To read the blog post associated with the article, you can go [here](https://medium.com/@rebeccaebarnes/this-will-make-you-think-like-a-supercomputer-39898ab9eaf8).
 
+## Files
+### Data
+- **seattle.zip**: Original Kaggle data
+- **calendar.csv**: Provides date, availability, and price data for each listing
+- **listings.csv**: Provides comprehensive details about each listing including host details, location description and details, and review ratings
+- **reviews.csv**: Provides details of review comments
+- **tree_dot folder**: Contains `.dot` files of algorithm decision trees
+
+### Images
+- **Details of Aibnb listings**:
+    - front_page.PNG
+    - detail_page.PNG
+    - airbnb_listing.PNG
+- **tree_img folder**: Contains screenshots of algorithm decision tree visualizations
+
+
 ## Technologies Used
 - Python
 - Libraries: sklearn, pandas, numpy, matplotlib, seaborn, nltk
@@ -35,3 +51,11 @@ Using a Random Forest Classifier, it was possible to predict whether a host made
 !['Enter Message'](airbnb_listing.PNG)
 
 The most important features in the classifier were price, number of reviews, the day of the week, number of bedrooms and whether the host is a superhost. Whether the listing name contained the words _heart_ and _bright_ were the next two most important features.
+
+## Acknowledgements
+The key visualizations for this project were developed from scikit-learn documentation for
+- A [confusion matrix](https://scikit-learn.org/stable/auto_examples/model_selection/plot_confusion_matrix.html#sphx-glr-auto-examples-model-selection-plot-confusion-matrix-py)
+- [Plotting learning curves](https://scikit-learn.org/stable/auto_examples/model_selection/plot_learning_curve.html)
+- [Feature importances with forests of trees](https://scikit-learn.org/stable/auto_examples/ensemble/plot_forest_importances.html)
+
+The process for visualizing the decision trees was obtained from [this post](https://towardsdatascience.com/how-to-visualize-a-decision-tree-from-a-random-forest-in-python-using-scikit-learn-38ad2d75f21c), using http://webgraphviz.com/.
