@@ -81,7 +81,9 @@ The final model underfit slightly, which is likely due to the intentional limiti
 
 The most important features in the classifier were _price_, _number of reviews_, the _day of the week_, number of _bedrooms_ and whether the _host is a superhost_. Whether the listing name contained the words _heart_ and _bright_ were the next two most important features.
 
-!['message'](final_model_importances.png)
+<p align="center">
+  <img src="final_model_importances.png">
+</p>
 
 To further understand the model, visualizations of some of the tree estimators were produced. Below is a visualization of one of the trees at a depth of four. An orange color indicates a greater likelihood of _Not Available_ and a blue color indicates a greater likelihood of _Available_. The darker the color, the more pure the node.
 
