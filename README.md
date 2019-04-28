@@ -77,6 +77,10 @@ The most important features in the classifier were _price_, _number of reviews_,
 
 !['message'](final_model_importances.png)
 
+To further understand the model, visualizations of some of the tree estimators were produced. Below is a visualization of one of the trees at a depth of four. An orange color indicates a greater likelihood of _Not Available_ and a blue color indicates a greater likelihood of _Available_. The darker the color, the more pure the node.
+
+!['message'](final_model_tree.png)
+
 ## Acknowledgements
 The key visualizations for this project were developed from scikit-learn documentation for
 - A [confusion matrix](https://scikit-learn.org/stable/auto_examples/model_selection/plot_confusion_matrix.html#sphx-glr-auto-examples-model-selection-plot-confusion-matrix-py)
