@@ -61,17 +61,23 @@ Custom transformers allowed for the identification of skewed columns with a natu
 ### Feature Inclusion
 The inclusion of features in the model prioritized minimizing the number of features to be included in the model. This was approached by identifying salient pieces of information from an Airbnb listing, limiting a model to the most important features, and investigating the impact of additional features.
 
-!['message'](airbnb_listing.PNG)
+<p align="center">
+  <img src="airbnb_listing.PNG">
+</p>
 
 ## Key Findings
 
 Using a Random Forest Classifier, it was possible to predict whether a host made a listing available with approximately 90% accuracy using only information that is available when browsing the listings and the day of the week for which to predict.
 
-!['message'](final_model_cm.png)
+<p align="center">
+  <img src="final_model_cm.png">
+</p>
 
 The final model underfit slightly, which is likely due to the intentional limiting of features included in the model.
 
-!['message'](final_model_underfit.png)
+<p align="center">
+  <img src="final_model_underfit.png">
+</p>
 
 The most important features in the classifier were _price_, _number of reviews_, the _day of the week_, number of _bedrooms_ and whether the _host is a superhost_. Whether the listing name contained the words _heart_ and _bright_ were the next two most important features.
 
